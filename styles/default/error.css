@@ -1,0 +1,20 @@
+body {
+	background-color: #accadd;
+	color: #485560;
+	margin: 0;
+	padding: 20px 25%;
+	font-family: monospace;
+}
+h1 {
+	font-family: Calibri, Arial, "lucida grande";
+	font-size: 40px;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px #97b5c5 solid;
+	text-shadow: -1px 1px 5px #fff;
+}
+a {
+	color: #485570;
+	font-weight: bold;
+	text-decoration: none;
+}

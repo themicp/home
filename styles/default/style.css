@@ -1,0 +1,219 @@
+* {
+	font-family: calibri, arial, tahoma, "lucida grande";
+}
+a {
+	color: #49616f;
+}
+body {
+	background: #000;
+	color: #666;
+}
+div.elem {
+	background: #96bad9 url('./images/resources/elem.jpg') left  top repeat-x;
+	border-top: 1px #eee solid;
+	border-bottom: 1px #888 solid;
+	border-left: 1px #daebff solid;
+	border-right: 1px #999 solid;
+}
+h2 {
+	background: #dbe8ff url('./images/resources/h2.jpg') left  bottom repeat-x;
+	text-shadow: -1px 1px 3px #fff;
+	height: 28px;
+	border-bottom: 1px #666 solid;
+	padding-top: 3px;
+}
+
+ul#bookmarks li:hover {
+	background: transparent url('./images/resources/bmover.png') top center no-repeat;
+	border: 1px #daebff solid;
+}
+ul#bookmarks li#bmadd:hover {
+	background: none;
+	border: none;
+}
+
+
+span.sizeaction , span.elemaction {
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 3px;
+	cursor: pointer;
+}
+span#setbig {
+	right: 10px;
+}
+span#setsmall {
+	right: 40px;
+}
+span#refresh {
+	right: 10px;
+}
+span#changesource {
+	right: 40px;
+}
+
+span#setbig {
+	background: transparent url('images/actions/setbig.png') center no-repeat;
+}
+span#setsmall {
+	background: transparent url('images/actions/setsmall.png') center no-repeat;
+}
+span#refresh {
+	background: transparent url('images/actions/refresh.png') center no-repeat;
+}
+span#changesource {
+	background: transparent url('images/actions/changesource.png') center no-repeat;
+}
+span#setbig:hover {
+	background: transparent url('images/actions/setbig_o.png') center no-repeat;
+}
+span#setsmall:hover {
+	background: transparent url('images/actions/setsmall_o.png') center no-repeat;
+}
+span#refresh:hover {
+	background: transparent url('images/actions/refresh_o.png') center no-repeat;
+}
+span#changesource:hover {
+	background: transparent url('images/actions/changesource_o.png') center no-repeat;
+}
+
+div#rssfeeds h3 {
+	border-bottom: 1px #daebff solid;
+}
+
+
+ol.rssl li.odd a {
+	/*color: #1d4a64;*/
+	color: #485560;
+}
+
+ol.rssl li a {
+	font-weight: bold;
+	font-size: 15px;
+	text-shadow: -1px 0 3px #fff;
+}
+ol.rssl li a:hover {
+	color: #333;
+}
+div.morefeeds, div.lessfeeds {
+	background: #dbe8ff url('./images/resources/elem.jpg') left top repeat-x;
+	text-shadow: -1px 1px 3px #fff;
+	padding: 2px 0;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: 1px #daebff solid;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+div.morefeeds {
+	float: left;
+	width: 50%;
+	clear: left;
+	margin-top: 10px;
+	display: inline-block;
+}
+div.lessfeeds {
+	display: block;
+	margin-top: 10px;
+}
+
+form#changefeedsource  textarea {
+	border: 1px #333 solid;
+	background-color: rgba(255,255,255,0.7);
+}
+form#changefeedsource input[type=button] {
+	background: transparent url('images/actions/go.png') center no-repeat;
+}
+div#addbookmark form {
+	background: #d3e3f6 url('images/resources/smooth.jpg') bottom repeat-x;
+}
+div#addbookmark form h3 {
+	color: #224;
+	border-bottom: 1px #89a solid;
+	text-shadow: -1px 1px 2px #fff;
+}
+div#addbookmark form label {
+	color: #224;
+	text-shadow: -1px 1px 2px #fff;
+}
+div#addbookmark form input[type=text] {
+	height: 20px;
+	border: 1px #888 solid;
+	font-size: 17px;
+}
+div#addbookmark form input#bmtitle {
+	font-weight: bold;
+}
+div#addbookmark form input[type=submit] {
+	color: #fff;
+	background-color: #7dbf1f;
+}
+
+/**********
+	RIGHT
+**********/
+
+/**********
+	SEARCH
+**********/
+img#googleimg {
+	position: relative;
+	top: 2px;
+}
+img#wikipediaimg {
+	position: relative;
+	bottom: 4px;
+}
+div#soptions input[type=radio] {
+	margin: 0;
+	height: 30px;
+	width: 20px;
+}
+input#searchterm {
+	height: 27px;
+	border: 1px #485560 solid;
+	font-size: 22px;
+	color: #777;
+	padding-right: 60px;
+	border-radius: 8px;
+	background: #efefef url('images/resources/searchbg.jpg') bottom repeat-x;
+	
+	text-indent: 10px;
+}
+input#searchbutton {
+	position: absolute;
+	top: 6px;
+	right: 13px;
+	height: 22px;
+	width: 50px;
+	height: 20px;
+	
+	background: transparent url('images/resources/search.png') center no-repeat;
+	border: none;
+	text-indent: -9999px;
+}
+
+/*******************
+	DRAG AND DROP
+*******************/
+div.droparea {
+	display: none;
+	margin: 4px 3px;
+	padding: 5px 0;
+	background-color: #9EC8FF;
+	color: #376299;
+	text-align: center;
+	border: 1px #376299 dashed;
+}
+div.drophover {
+	border: 1px #9EC8FF dashed;
+	color: #9EC8FF;
+	background-color: #376299;
+}
+
+
+div.ui-draggable-dragging {
+	opacity: 0.7;
+}

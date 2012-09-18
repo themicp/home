@@ -1,0 +1,284 @@
+* {
+	font-family: calibri, arial, tahoma, "lucida grande";
+}
+a {
+	color: #C5CEE3;
+}
+body {
+	background-color: #17181A;
+	background: #17181A url('images/resources/bg.jpg') top repeat;
+	color: #ddd;
+}
+
+div.elem {
+	background-color: #52555C;
+}
+h2 {
+	background: #3A3F4A url('images/resources/h2.jpg') top left repeat;
+	text-shadow: -1px 1px 2px #000;
+	color: #AEC49D;
+	font-style: italic;
+	font-size: 16px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	border-bottom: 1px #AEC49D solid;
+}
+div#bookmarks h3 {
+	font-size: 17px;
+}
+ul.bookmarks li:hover {
+	background: transparent url('./images/resources/bmbg2.png') top left repeat-x;
+	border: 1px #aaa solid;
+}
+ul.bookmarks li#bmadd:hover {
+	background: transparent;
+}
+ul.bookmarks span.bookmarkDescr {
+	color:  #89a1bf;
+}
+
+
+span.sizeaction , span.elemaction {
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	top: 1px;
+	cursor: pointer;
+}
+
+span#refresh {
+	right: 10px;
+}
+span#changesource {
+	right: 40px;
+}
+span#refresh {
+	background: transparent url('images/actions/refresh.png') center no-repeat;
+}
+span#changesource {
+	background: transparent url('images/actions/changesource.png') center no-repeat;
+}
+div#rssfeeds h3,
+div#bookmarks h3 {
+	border-bottom: 1px #81AFC6 solid;
+	color: #81AFC6;
+	text-shadow: 0 1px 2px #000;
+}
+div#rssfeeds h3 {
+	margin: auto 20px;
+}
+ol.rssl {
+	padding: 0 20px;
+	list-style-type: none;
+}
+ol.rssl span.feedCount {
+	padding-right: 2px;
+	font-size: 18px;
+	color: #626876;
+}
+ol.rssl li{
+	padding-top: 2px;
+	padding-bottom: 3px;
+}
+ol.rssl li.odd {
+	background-color: rgba(0,0,0,0.06);
+}
+
+ol.rssl li a {
+	font-weight: bold;
+	font-size: 15px;
+}
+ol.rssl li a:hover {
+	color: #fff;
+}
+ol.rssl div.rssfeedDescr {
+	color: #89a1bf;
+}
+
+div.morefeeds, div.lessfeeds {
+	background-color: #4D4F54;
+	border-top: 1px rgba(255,255,255,0.2) solid;
+
+	text-shadow: -1px 1px 3px #000;
+	padding: 2px 0;
+
+}
+div.morefeeds {
+	float: left;
+	width: 50%;
+	clear: left;
+	margin-top: 10px;
+	display: inline-block;
+}
+div.lessfeeds {
+	display: block;
+	margin-top: 10px;
+}
+
+
+form#changefeedsource  textarea {
+	border: 1px #333 solid;
+	background-color: #eee;
+}
+form#changefeedsource input[type=button] {
+	background: transparent url('images/actions/go.png') center no-repeat;
+}
+div#addbookmark form,
+div#addbookmarksgroup form {
+	background-color: #52555C;
+}
+div#addbookmark form h3,
+div#addbookmarksgroup form h3 {
+	color: #AEC49D;
+	border-bottom: 1px #AEC49D solid;
+	text-shadow: -1px 1px 2px #000;
+}
+div#addbookmark form label,
+div#addbookmarksgroup form label {
+	color: #81AFC6;
+	text-shadow: -1px 1px 2px #000;
+	font-weight: normal;
+	width: 100px;
+}
+div#addbookmark form input[type=text],
+div#addbookmarksgroup form input[type=text] {
+	height: 20px;
+	border: 1px #888 solid;
+	font-size: 17px;
+	width: 250px;
+}
+div#addbookmark form input#bmtitle,
+div#addbookmarksgroup form input#bmtitle {
+	font-style: italic;
+}
+div#addbookmark form input[type=submit],
+div#addbookmarksgroup form input[type=submit] {
+	color: #000;
+	background-color: #AEC49D;
+	border: none;
+}
+
+/**********
+	SEARCH
+**********/
+img#googleimg {
+	position: relative;
+	top: 2px;
+}
+img#wikipediaimg {
+	position: relative;
+	bottom: 4px;
+}
+div#soptions input[type=radio] {
+	margin: 0;
+	height: 30px;
+	width: 20px;
+}
+input#searchterm {
+	height: 27px;
+	border: 1px #282c33 solid;
+	font-size: 22px;
+	color: #282c33;
+	padding-right: 60px;
+	border-radius: 3px;
+	background: #efefef url('images/resources/searchbg.jpg') bottom repeat-x;
+	
+	text-indent: 10px;
+}
+input#searchbutton {
+	position: absolute;
+	top: 6px;
+	right: 13px;
+	height: 22px;
+	width: 50px;
+	height: 20px;
+	
+	background: transparent url('images/resources/search.png') center no-repeat;
+	border: none;
+	text-indent: -9999px;
+}
+
+/*******************
+	DRAG AND DROP
+*******************/
+div.droparea {
+	display: none;
+	margin: 4px 3px;
+	padding: 5px 0;
+	background-color: #333;
+	color: #9EC8FF;
+	text-align: center;
+	border: 1px #9EC8FF dashed;
+}
+div.drophover {
+	border: 1px #9EC8FF dashed;
+	color: #9EC8FF;
+	background-color: #376299;
+}
+
+/***************
+	ACTIONS
+***************/
+div.ui-draggable-dragging {
+	opacity: 0.7;
+}
+
+div.actionObj {
+	width: 32px;
+	height: 32px;
+	background: transparent url('images/resources/actions.png') center no-repeat;
+	display: inline-block;
+	float: left;
+	margin: 0 5px;
+}
+div.actionObj div.pseudolink {
+	height: 32px;
+	width: 32px;
+}
+div#setSize {
+	background: transparent url('images/actions/setsmall.png') center no-repeat;
+}
+div#AddBookmarksGroup {
+	background: transparent url('images/actions/crosslight.png') center no-repeat;
+}
+div#AddBookmark {
+	background: transparent url('images/actions/cross.png') center no-repeat;
+}
+
+/***************
+	SETTINGS
+***************/
+div#settings label {
+	cursor: pointer;
+	font-weight: bold;
+	font-family: calibri;
+	font-size: 14px;
+}
+
+div#themeoptions {
+	text-align: center;
+	margin: 10px 0;
+}
+div#themeoptions div {
+	display: inline-block;
+	margin: 1px 4px;
+}
+
+div#themebutton {
+	display: block;
+	text-align: center;
+}
+div#themebutton input {
+	margin: 0 auto 10px auto;
+	background-color: #333;
+	color: #9EC8FF;
+	text-align: center;
+	border: 1px #9EC8FF solid;
+}
+div#themeoptions label img {
+	border: 3px #52555C solid;
+}
+
+div#themeoptions label.tempSelectTheme img {
+	border: 3px #AEC49D solid;
+}
